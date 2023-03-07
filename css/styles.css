@@ -49,14 +49,26 @@ footer {
 /* ================================== */
 
 .tile {
+  justify-content:center;
+  align-items:flex-end;
+  display: flex;
+  height: 100%;
+  margin: auto;
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
 }
 .tile img {
+  object-fit: cover;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
 }
 .tile img:hover {
+  filter: brightness(50%);
+  transform: scale(1.01);
+  cursor: pointer;
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
 }
@@ -64,48 +76,37 @@ footer {
 /* Hint: Notice the position:absolute and z-index properties. */
 /* Think about how those in relation to the existing "tile" classes. */
 .tile-text {
-  position: absolute;
+  position:absolute;
   z-index: 1;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 2px;
+  color: white;
 }
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/workspace/sayanhati20-ME_QTRIPSTATIC/assets/hero.jpg");
     height: 50vh;
-    display: flex;
     background-position:center;
     background-size: cover;
     justify-content:center;
     align-items:center;
-    width:auto;
+    background-repeat: no-repeat;
 
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
 }
-input{
-  background-color: white;
-  display: flex;
-  justify-items: flex-start;
-    border: none;
-    border-radius: var(--ntp-realbox-border-radius);
-    color: var(--color-realbox-foreground);
-    font-family: inherit;
-    font-size: inherit;
-    outline: 0;
-    padding-inline-end: calc(var(--ntp-realbox-voice-icon-offset) + var(--ntp-realbox-icon-width) + var(--ntp-realbox-inner-icon-margin));
-    padding-inline-start: 10px;
-    position: relative;
-}
+
  
 
 .hero-subheading {
+  text-align: center;
   font-size: 24px;
   font-weight: 100;
-  
+  color: white;
 }
 .hero-input {
   width: 80%;
